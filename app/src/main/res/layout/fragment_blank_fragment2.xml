@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".BlankFragment2">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="27dp"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/rusername"
+            android:layout_width="260dp"
+            android:layout_height="55dp"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="40dp"
+            android:drawablePadding="10dp"
+            android:hint="USERNAME"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColorHint="#606060"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/rpassword"
+            android:layout_width="260dp"
+            android:layout_height="55dp"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="40dp"
+            android:drawablePadding="10dp"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColorHint="#606060"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rusername" />
+
+        <EditText
+            android:id="@+id/rphone"
+            android:layout_width="260dp"
+            android:layout_height="55dp"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="60dp"
+            android:drawablePadding="10dp"
+            android:hint="PHONE NO.(+91 ..)"
+            android:inputType="text|phone"
+            android:padding="15dp"
+            android:textColorHint="#606060"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/rregister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rpassword" />
+
+
+        <Button
+            android:id="@+id/rregister"
+            android:layout_width="248dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="54dp"
+            android:background="@drawable/button_background"
+            android:text="REGISTER"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rphone" />
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="89dp"
+            android:layout_marginEnd="89dp"
+
+            android:hint="Verification Code"
+            android:inputType="text|phone"
+            android:padding="15dp"
+            android:textColorHint="#606060"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rregister" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

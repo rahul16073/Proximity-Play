@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Chatrooms">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:id="@+id/constraintLayout"
+        android:layout_width="331dp"
+        android:layout_height="485dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/layout_bg"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.rah.mcpro.FragmentMessageList"
+
+            android:layout_width="322dp"
+            android:layout_height="386dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="199dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="type message.."
+            android:ems="10"
+            android:hint="Type message.."
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/send"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment2" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_background"
+            android:text="Send"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toEndOf="@+id/message"
+            app:layout_constraintTop_toBottomOf="@+id/fragment2" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="274dp"
+        android:layout_height="51dp"
+
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/chatroom_button"
+        android:text="Exit"
+        android:textColor="@color/background_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</android.support.constraint.ConstraintLayout>

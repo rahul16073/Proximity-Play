@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context=".Profile">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="27dp"
+
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/pusername"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="44dp"
+            android:padding="10dp"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/phone_no"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:text="sdssd"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pusername" />
+
+        <EditText
+            android:id="@+id/opass"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Old password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_no" />
+
+        <EditText
+            android:id="@+id/npass"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/opass" />
+
+        <EditText
+            android:id="@+id/cnpass"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="Confirm New Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/npass" />
+
+        <Button
+            android:id="@+id/change_password"
+            android:layout_width="160dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+
+            android:layout_marginStart="10dp"
+
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/button_background"
+            android:text="change password"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/logout"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="115dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/button_background"
+            android:text="Log out"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/change_password" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

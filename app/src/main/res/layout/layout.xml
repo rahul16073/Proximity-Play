@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="30dp"
+
+    android:layout_marginEnd="15dp"
+
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="337dp"
+        android:layout_height="192dp"
+
+
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/join"
+            android:layout_width="151dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_marginEnd="16dp"
+
+
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/chatroom_button2"
+            android:text="Enter chatroom"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@+id/loc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/loc"
+            android:layout_width="151dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/chatroom_button2"
+            android:text="Location"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sportname" />
+
+        <TextView
+            android:id="@+id/groundname"
+            android:layout_width="157dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/join"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="30dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="11dp"
+            android:text="Ground Name"
+            android:textSize="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/ground_distance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ground_distance"
+            android:layout_width="95dp"
+            android:layout_height="39dp"
+            android:layout_alignBaseline="@+id/km"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="7dp"
+
+            android:text="0.0"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/km"
+            app:layout_constraintStart_toEndOf="@+id/groundname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/km"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+
+            android:text="KM"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="103dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="20dp"
+
+            android:text="TextView"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/sportname"
+            app:layout_constraintEnd_toStartOf="@+id/join"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Public" />
+
+        <TextView
+            android:id="@+id/sportname"
+            android:layout_width="136dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="29dp"
+            android:text="Sportname"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/loc"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
