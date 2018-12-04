@@ -39,6 +39,14 @@
           }
         },
         {
+          "client_id": "755851046705-jnrdsvo52168kjmkkfn43vpmsh6chtnh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rah.mcpro",
+            "certificate_hash": "19767352f3a72935079dfb7e2650ab9f00c2bb2a"
+          }
+        },
+        {
           "client_id": "755851046705-dsakukeashml2c8srlvhrcellmpkdkie.apps.googleusercontent.com",
           "client_type": 3
         }

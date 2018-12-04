@@ -25,7 +25,7 @@ import com.google.firebase.database.ValueEventListener;
 public class view_profile extends AppCompatActivity implements dialog.dialoglistener{
     FirebaseDatabase firebaseDatabase;
     TextView textView5,textView6,textView7;
-    Button rate,report;
+    Button rate;
     Boolean bool=true;
     float rating,prevrate,currrate=0;
     ratings rr = null;
@@ -39,7 +39,6 @@ public class view_profile extends AppCompatActivity implements dialog.dialoglist
         textView6=(TextView)findViewById(R.id.textView6) ;
         textView7=(TextView)findViewById(R.id.textView7);
         rate=(Button)findViewById(R.id.rate);
-        report=(Button) findViewById(R.id.report);
         Typeface tf1;
         tf1 = Typeface.createFromAsset(getApplicationContext().getAssets(), "Quicksand-Bold.otf");
         textView5.setTypeface(tf1);

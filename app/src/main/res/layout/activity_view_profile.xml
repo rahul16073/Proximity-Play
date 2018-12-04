@@ -66,17 +66,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-        <Button
-            android:id="@+id/report"
-            android:layout_width="121dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="38dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/button_background"
-            android:text="Report"
-            android:textColor="#ffffff"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rate" />
+
     </android.support.constraint.ConstraintLayout>
 
 

@@ -188,7 +188,7 @@ public class adapter extends RecyclerView.Adapter<adapter.viewholder> implements
                                 intent.putExtra("roomId", room.getId());
                                 context.startActivity(intent);
                             } else if (!password.equals(room.getPassword()))
-                                Toast.makeText(context, room.getPassword() + " " + password, Toast.LENGTH_LONG).show();
+                                Toast.makeText(context, "WRONG PW", Toast.LENGTH_LONG).show();
                             else {
                                 Toast.makeText(context, "This room is completely filled", Toast.LENGTH_SHORT).show();
                             }
@@ -237,7 +237,7 @@ public class adapter extends RecyclerView.Adapter<adapter.viewholder> implements
         final String currentuser=d.select(0);
         final DatabaseReference myRef=firebaseDatabase.getReference("Rooms");
 
-        myRef.addValueEventListener(new ValueEventListener() {
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot RoomSnapshot: dataSnapshot.getChildren()){
@@ -276,7 +276,7 @@ public class adapter extends RecyclerView.Adapter<adapter.viewholder> implements
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(context,databaseError.getMessage(),Toast.LENGTH_SHORT).show();
+//                Toast.makeText(context,databaseError.getMessage(),Toast.LENGTH_SHORT).show();
             }
         });
     }

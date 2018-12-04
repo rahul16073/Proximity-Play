@@ -77,6 +77,7 @@ public class Chatrooms extends AppCompatActivity {
                                     ref.child(id).removeValue();
                                     ref.child(id).setValue(r);
                                 }
+                                break;
                             }
                         }
                     }
