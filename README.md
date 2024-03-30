@@ -2,7 +2,7 @@ Overview->
 This application enables users to create and join chat groups based on their location, facilitating the organization of sports activities at nearby venues. Leveraging location-based features, users can easily connect with others interested in playing sports in their vicinity.
 
 Key Features->   
-Firebase Integration: Utilizes Firebase for real-time chat functionality, enabling seamless communication within chat groups.   
+Firebase Realtime Database Integration: Utilizes Firebase Realtime Database for real-time chat functionality, enabling seamless communication within chat groups.   
 RecyclerView: Implements RecyclerView for dynamic and optimized data presentation, ensuring smooth scrolling and performance.     
 Google Maps API: Integrates the Google Maps API for location services, allowing users to view nearby venues and select locations for sports activities.   
 
